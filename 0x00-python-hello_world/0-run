@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod u+x $PYFILE && pwd | $PYFILE
+chmod u+x ./$PYFILE && ./$PYFILE
