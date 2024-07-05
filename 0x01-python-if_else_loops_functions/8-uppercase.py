@@ -7,5 +7,5 @@ def uppercase(str):
         else:
             listString.append(i)
     for n in range(len(listString)):
-        print(listString[n], end="")
+        print("{:s}".format(listString[n]), end="")
     print()
