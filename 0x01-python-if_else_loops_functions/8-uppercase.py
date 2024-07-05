@@ -6,6 +6,6 @@ def uppercase(str):
             listString.append(chr(ord(i) - 32))
         else:
             listString.append(i)
-    for n in range(len(listString) - 1):
+    for n in range(len(listString)):
         print(listString[n], end="")
     print()
