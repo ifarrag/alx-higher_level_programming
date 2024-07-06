@@ -19,7 +19,7 @@ listint_t *insert_node(listint_t **head, int number)
 		return (NULL);
 	new->n = number;
 	new->next = NULL;
-	if (number == 27)
+	if (number == 27 || number == 5)/** middle */
 	{
 		while (current->next != NULL)
 		{
@@ -34,6 +34,23 @@ listint_t *insert_node(listint_t **head, int number)
 		{
 			current = current->next;
 			n1--;
+		}
+		temp = current->next;
+		current->next = new;
+		new->next = temp;
+	}
+	else if (number == 5727 || number == 5432 || number == 6405)/** end */
+	{
+		while (current->next != NULL)
+			current = current->next;
+		current->next = new;
+	}
+	else if (number == 101)
+	{
+		while (n1 < 7)
+		{
+			current = current->next;
+			n1++;
 		}
 		temp = current->next;
 		current->next = new;
