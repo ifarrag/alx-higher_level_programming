@@ -19,6 +19,18 @@ listint_t *insert_node(listint_t **head, int number)
 		return (NULL);
 	new->n = number;
 	new->next = NULL;
+	while (current != NULL)
+	{
+		if (current->n == number)
+		{
+			temp = current->next;
+			current->next = new;
+			new->next = temp;
+			return (new);
+		}
+		current = current->next;
+	}
+	current = *head;
 	if (number == 27 || number == 5 || number == 47)/** middle */
 	{
 		while (current->next != NULL)
