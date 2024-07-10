@@ -5,13 +5,13 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
         if len(tuple_a) == 0 or tuple_a is None:
             a = (0, 0)
-        elif i > len(tuple_a):
+        elif i > len(tuple_a) - 1:
             a = (0, 0)
         else:
             a = tuple_a
         if len(tuple_b) == 0 or tuple_b is None:
             b = (0, 0)
-        elif i > len(tuple_b):
+        elif i > len(tuple_b) - 1:
             b = (0, 0)
         else:
             b = tuple_b
