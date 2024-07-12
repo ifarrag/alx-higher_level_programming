@@ -11,4 +11,3 @@ def best_score(a_dictionary):
     for i, y in a_dictionary.items():
         if biggi == y:
             return i
-
