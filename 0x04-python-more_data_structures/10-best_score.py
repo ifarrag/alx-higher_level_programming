@@ -2,7 +2,7 @@
 def best_score(a_dictionary):
     new_l = []
     biggi = 0
-    if a_dictionary is None:
+    if a_dictionary is None or len(a_dictionary) == 0:
         return None
     for i, y in a_dictionary.items():
         new_l.append(y)
