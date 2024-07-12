@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 def only_diff_elements(set_1, set_2):
     special = []
-    for i in set(set_1):
+    for i in set(set_2):
         x = 0
-        for n in set(set_2):
+        for n in set(set_1):
             if n == i:
                 x = 1
         if x == 0:
-            special.append(n)
-    for a in set(set_2):
+            special.append(i)
+    for a in set(set_1):
         x = 0
-        for b in set(set_1):
+        for b in set(set_2:
             if b == a:
                 x = 1
         if x == 0:
-            special.append(b)
+            special.append(a)
     return set(special)
