@@ -8,11 +8,11 @@ def only_diff_elements(set_1, set_2):
                 x = 1
         if x == 0:
             special.append(n)
-    for i in set(set_2):
+    for a in set(set_2):
         x = 0
-        for n in set(set_1):
-            if n == i:
+        for b in set(set_1):
+            if b == a:
                 x = 1
         if x == 0:
-            special.append(n)
+            special.append(b)
     return set(special)
