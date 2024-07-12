@@ -11,7 +11,7 @@ def only_diff_elements(set_1, set_2):
     for i in set(set_2):
         x = 0
         for n in set(set_1):
-            if n == y:
+            if n == i:
                 x = 1
         if x == 0:
             special.append(n)
