@@ -3,5 +3,6 @@ def common_elements(set_1, set_2):
     new_l = []
     for i in set(set_1):
         for n in set(set_2):
-            new_l.append(n if n == i)
+            if n == i:
+                new_l.append(n)
     return new_l
