@@ -7,8 +7,11 @@ def safe_print_list(my_list=[], x=0):
             print()
             return i+1
         else:
+            print()
             return 0
     except IndexError:
-        return i+1
+        print()
+        return i
     except:
+        print()
         return i
