@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-""" raise Error if size not int or less than 0"""
+""" raise Error if size not int or less than 0.
+
+Attributes: 
+    _Square__size (int): the size of the square
+
+"""
 
 
 class Square:
