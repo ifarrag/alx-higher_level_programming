@@ -6,6 +6,7 @@
         size ** 2
 """
 
+
 class Square:
     """Define square.
     Attribute:
@@ -19,6 +20,7 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
+
     def area(self):
         """The square area."""
         return self._Square__size ** 2
