@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """ Square (size)
-Attributes : _Square__size
+Args:
+    __size (int): then only parameter
+
+Attributes:
+            _Square__size
 raise Error if size not int or less than 0 """
 
 
