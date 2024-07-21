@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 """ raise Error if size not int or less than 0
-Args:
-    __size (int): then only parameter
-
 Attributes:
-    _Square__size"""
+    _Square__size (int): is the size of the sqaure"""
 
 
 class Square:
