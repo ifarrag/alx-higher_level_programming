@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-""" raise Error if size not int or less than 0
-    _Square__size (int): is the size of the sqaure
-"""
+""" raise Error if size not int or less than 0"""
 
 
 class Square:
