@@ -3,6 +3,8 @@
 
 
 class Square:
+    """ arg : size - attr : _Square__size 
+        raise Error if size not int or less than 0"""
     n = 0
     def __init__(self, __size = 0):
         self._Square__size = __size
