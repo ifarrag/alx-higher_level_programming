@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" square """
+""" arg : size - attr : _Square__size 
+        raise Error if size not int or less than 0"""
 
 
 class Square:
