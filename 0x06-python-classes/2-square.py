@@ -2,8 +2,6 @@
 """ 
 raise Error if size not int or less than 0. 
 
-Attributes: 
-    _Square__size (int): the size of the square 
 """
 
 
