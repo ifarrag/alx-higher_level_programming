@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" 
+"""
+The Square class with size
 raise Error if size not int or less than 0. 
 
 """
