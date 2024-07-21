@@ -1,18 +1,22 @@
 #!/usr/bin/python3
-"""
-The Square class with size
-raise Error if size not int or less than 0. 
+"""Square is a class the take int size,
+great than 0.
 
+Attributes: 
+    _Square__size: the size of the square.
 """
 
 
 class Square:
-""" Args: size
-Attributes: _Square__size
-raise Error if size not int or less than 0 """
-    def __init__(self, __size = 0):
-        self._Square__size = __size
-    if type(__size) != int:
-        raise TypeError("size must be an integer")
-    if self._Square__size < 0:
-        raise ValueError("size must be >= 0")
+    """Square is a class the take int size,
+        great than 0.
+
+        Attributes:
+            _Square__size: the size of the square.
+        Raises:
+            TypeError: size must be int.
+            ValueError: size must be >= zero.
+
+    """
+    def __init__(self, size=0):
+        self._Square__size = size
