@@ -2,7 +2,7 @@
 """Square is a class the take int size,
 great than 0.
 
-Attributes: 
+Attributes:
     _Square__size: the size of the square.
 """
 
