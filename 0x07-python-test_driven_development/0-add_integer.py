@@ -1,15 +1,20 @@
 #!/usr/bin/python3
+""" DOC.
+    Add two integers"""
+
+
 def add_integer(a, b=98):
+    """ a and b must be integers
+    else:
+    Raise TypeError"""
+
     if type(a) is float:
         a = int(a)
     elif type(a) is not int:
-        raise ValueError("a must be an integer")
+        raise TypeError("a must be an integer")
     if type(b) is float:
         b = int(b)
     elif type(b) is not int:
-        raise ValueError("b must be an integer")
+        raise TypeError("b must be an integer")
 
     return a + b
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile()
