@@ -82,7 +82,9 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
+
     @classmethod
     def square(cls, size=0):
-        new_class = Rectangle(cls.size, cls.size)
-        return new_class
+        Rectangle.width = cls.size
+        Rectangle.height = cls.size
+        return Rectangle
