@@ -54,7 +54,7 @@ class Rectangle:
             sym = ""
             for i in range(self.height):
                 for n in range(self.width):
-                    sym += str(self.print_symbol)
+                    sym += str(Rectangle.print_symbol)
                 if i != self.height - 1:
                     sym += "\n"
             return sym
