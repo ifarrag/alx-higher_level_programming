@@ -51,7 +51,6 @@ class Rectangle:
 
     def __str__(self):
         if self.height != 0 and self.width != 0:
-            sym = ""
             for i in range(self.height):
                 for n in range(self.width):
                     sym += Rectangle.print_symbol
