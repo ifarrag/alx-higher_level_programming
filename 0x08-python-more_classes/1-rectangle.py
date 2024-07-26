@@ -6,16 +6,16 @@
 class Rectangle:
     """ Define Rectangle """
     def __init__(self, width=0, height=0):
-        self._Rectangle__height = height
-        self._Rectangle__width = width
+        self.__height = height
+        self.__width = width
 
     @property
     def width(self):
-        return self._Rectangle__width
+        return self.__width
 
     @property
     def height(self):
-        return self._Rectangle__height
+        return self.__height
 
     @height.setter
     def height(self, value):
