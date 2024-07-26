@@ -56,5 +56,6 @@ class Rectangle:
             return sym
         else:
             return str("")
+
     def __repr__(self):
         return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
