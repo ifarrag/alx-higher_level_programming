@@ -51,7 +51,8 @@ class Rectangle:
             for i in range(self.height):
                 for n in range(self.width):
                     sym += "#"
-                sym += "\n"
+                if i != self.height - 1:
+                    sym += "\n"
             return sym
         else:
             return str("")
