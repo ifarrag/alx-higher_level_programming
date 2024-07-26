@@ -51,10 +51,10 @@ class Rectangle:
 
     def __str__(self):
         if self.height != 0 and self.width != 0:
-            sym = None
+            sym = ""
             for i in range(self.height):
                 for n in range(self.width):
-                    sym += self.print_symbol
+                    sym += str(self.print_symbol)
                 if i != self.height - 1:
                     sym += "\n"
             return sym
