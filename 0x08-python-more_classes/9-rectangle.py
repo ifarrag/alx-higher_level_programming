@@ -85,5 +85,8 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        new_class = cls(size, size)
+        try:
+            new_class = cls(size, size)
+        except Exception:
+            raise Exception
         return new_class
