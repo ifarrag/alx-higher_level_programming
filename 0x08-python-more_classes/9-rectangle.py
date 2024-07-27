@@ -87,6 +87,8 @@ class Rectangle:
     def square(cls, size=0):
         try:
             new_class = cls(size, size)
-        except Exception:
-            raise Exception
+        except TypeError:
+            raise TypeError("width must be an integer")
+        except ValueError:
+            raise ValueError("width must be >= 0")
         return new_class
