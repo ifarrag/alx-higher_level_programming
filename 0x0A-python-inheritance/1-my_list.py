@@ -3,7 +3,11 @@
 
 
 class MyList(list):
-""" make list """
+    """ make list """
+    def __init__(self):
+        """init"""
+        super().__init__()
+
     def print_sorted(self):
         """ print sorted"""
         print(list.sort())
