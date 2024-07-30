@@ -1,1 +1,21 @@
->>> 
+>>> MyList = __import__('1-my_list').MyList
+
+>>> MyList()
+[]
+
+>>> MyList.append(3)
+
+>>> MyList()
+[3]
+
+>>> MyList.append(2)
+
+>>> Mylist.append(1)
+
+>>> MyList()
+[3, 2, 1]
+
+>>> MyList.print_sorted()
+[1, 2, 3]
+
+
