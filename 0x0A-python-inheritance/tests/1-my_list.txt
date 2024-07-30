@@ -2,6 +2,13 @@
 
 >>> mylist = MyList()
 
+>>> mylist.print_sorted()
+[]
+
+>>> mylist.print_sorted() == mylist
+[]
+False
+
 >>> mylist.append(3)
 
 >>> print(mylist)

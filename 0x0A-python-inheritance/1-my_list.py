@@ -4,7 +4,7 @@
 
 class MyList(list):
     """ make list """
-    
+
     def __init__(self):
         """init"""
         super().__init__()
