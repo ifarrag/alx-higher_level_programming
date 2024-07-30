@@ -4,12 +4,13 @@
 
 class MyList(list):
     """ make list """
+    New = MyList()
     def __init__(self):
         """init"""
         super().__init__()
+        self.temp = MyList() + New
 
     def print_sorted(self):
         """ print sorted"""
-        self.beSort = __class__
-        self.beSort.sort()
-        print(self.beSort)
+        self.temp.sort()
+        print(self.temp)
