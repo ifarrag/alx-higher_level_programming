@@ -5,12 +5,11 @@
 class MyList(list):
     """ make list """
     
-    ll = list(MyList())
     def __init__(self):
         """init"""
         super().__init__()
-        MyList.ll += MyList()
+        self.ll += MyList()
 
     def print_sorted(self):
         """ print sorted"""
-        print(MyList.ll)
+        print(self.ll)
