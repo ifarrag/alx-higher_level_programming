@@ -10,5 +10,6 @@ class MyList(list):
 
     def print_sorted(self):
         """ print sorted"""
-        self.beSort = MyList()
-        print([self.beSort].sort())
+        beSort = MyList()
+        beSort.sort()
+        print(self.beSort)
