@@ -12,6 +12,8 @@ class MyList(list):
     def cll(cls):
         cls.list()
 
+    cll()
+
     def print_sorted(self):
         """ print sorted"""
         print(cls.list())
