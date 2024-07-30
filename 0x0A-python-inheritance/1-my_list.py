@@ -8,8 +8,10 @@ class MyList(list):
     def __init__(self):
         """init"""
         super().__init__()
-        self.listit = list()
+    @classmethod
+    def cll(cls):
+        cls.list()
 
     def print_sorted(self):
         """ print sorted"""
-        print(self.listit)
+        print(cls.list())
