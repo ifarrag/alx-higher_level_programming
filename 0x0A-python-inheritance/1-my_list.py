@@ -12,4 +12,4 @@ class MyList(list):
         """ print sorted"""
         beSort = MyList()
         beSort.sort()
-        print(self.beSort)
+        print(beSort)
