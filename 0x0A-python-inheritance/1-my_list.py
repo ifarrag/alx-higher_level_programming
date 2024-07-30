@@ -8,12 +8,7 @@ class MyList(list):
     def __init__(self):
         """init"""
         super().__init__()
-    @classmethod
-    def cll(cls):
-        cls.list()
-
-    cll()
 
     def print_sorted(self):
         """ print sorted"""
-        print(cls.list())
+        print(MyList())
