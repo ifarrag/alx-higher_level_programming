@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" DOC """
+""" prints the list, but sorted"""
 
 
 class MyList(list):
