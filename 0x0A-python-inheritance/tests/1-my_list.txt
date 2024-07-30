@@ -5,8 +5,7 @@
 >>> mylist.print_sorted()
 []
 
->>> mylist.print_sorted() == mylist
-[]
+>>> mylist.print_sorted == mylist
 False
 
 >>> mylist.append(3)
