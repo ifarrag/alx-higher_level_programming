@@ -5,7 +5,7 @@
 >>> mylist.print_sorted()
 []
 
->>> mylist.print_sorted is mylist
+>>> id(mylist.print_sorted) is id(mylist)
 False
 
 >>> mylist.append(3)
