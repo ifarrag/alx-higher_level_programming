@@ -17,7 +17,7 @@
 >>> print(mylist)
 [3, 2, 1]
 
->>> list(mylist.print_sorted) is list(mylist)
+>>> list(mylist.print_sorted()) is list(mylist)
 False
 
 >>> mylist.print_sorted()
