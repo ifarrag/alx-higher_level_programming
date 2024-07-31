@@ -4,6 +4,7 @@
 
 >>> mylist.print_sorted()
 []
+[]
 
 >>> mylist.append(3)
 
@@ -18,9 +19,11 @@
 [3, 2, 1]
 
 >>> list(mylist.print_sorted()) is list(mylist)
+[1, 2, 3]
 False
 
 >>> mylist.print_sorted()
+[1, 2, 3]
 [1, 2, 3]
 
 >>> mylist.append(-1)
@@ -28,4 +31,5 @@ False
 >>> mylist.append(-3)
 
 >>> mylist.print_sorted()
+[-3, -1, 1, 2, 3]
 [-3, -1, 1, 2, 3]
