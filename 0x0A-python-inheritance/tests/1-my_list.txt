@@ -5,9 +5,6 @@
 >>> mylist.print_sorted()
 []
 
->>> id(mylist.print_sorted) is id(mylist)
-False
-
 >>> mylist.append(3)
 
 >>> print(mylist)
@@ -19,6 +16,10 @@ False
 
 >>> print(mylist)
 [3, 2, 1]
+
+>>> mylist.print_sorted() is list(mylist)
+[1, 2, 3]
+False
 
 >>> mylist.print_sorted()
 [1, 2, 3]
