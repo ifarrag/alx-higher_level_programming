@@ -14,8 +14,8 @@ if sys.argv > 1:
     for i in range(1, len(sys.argv)):
         listed.append(sys.argv[i])
 
-my_dir = load1("add_item.json")
+my_dir = load("add_item.json")
 
 my_dir += listed
 
-save1(my_dir, "add_item.json")
+save(my_dir, "add_item.json")
