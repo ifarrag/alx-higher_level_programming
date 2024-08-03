@@ -9,8 +9,8 @@ load = __import__("6-load_from_json_file.py").load_from_json_file
 f = open("add_item.json", 'a', encoding="utf-8")
 f.close()
 
-if argv > 1:
-    listed = str(argv[1:])
+if sys.argv > 1:
+    listed = str(sys.argv[1:])
 else:
     listed = []
 
