@@ -12,7 +12,7 @@ f.close()
 if sys.argv > 1:
     listed = str(sys.argv[1:])
 else:
-    listed = []
+    listed = list()
 
 my_dir = load("add_item.json")
 
