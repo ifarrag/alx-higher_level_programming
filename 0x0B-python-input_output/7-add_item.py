@@ -10,12 +10,10 @@ f = open("add_item.json", 'a', encoding="utf-8")
 f.close()
 
 if sys.argv > 1:
-    listed = str(sys.argv[1:])
+    listed = list(sys.argv[1:])
 else:
     listed = list()
 
-save1 = save()
-load1 = load()
 my_dir = load1("add_item.json")
 
 my_dir += listed
