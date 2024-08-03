@@ -9,10 +9,10 @@ load = __import__('6-load_from_json_file.py').load_from_json_file
 f = open("add_item.json", 'a', encoding="utf-8")
 f.close()
 
+listed = list()
 if sys.argv > 1:
-    listed = list(sys.argv[1:])
-else:
-    listed = list()
+    for i in range(1, len(sys.argv)):
+        listed.append(sys.argv[i])
 
 my_dir = load1("add_item.json")
 
