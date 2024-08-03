@@ -13,9 +13,12 @@ class Student:
     def to_json(self, attrs=None):
         """ Method Doc"""
 
-        if type(attrs) is list and attrs is not None:
+        if type(attrs) is list:
+            if len(attrs) == 0:
+                return dict()
+
+            new_dict = dict()
             for i in attrs:
-                new_dict = dict()
                 if i == 'first_name':
                     new_dict['first_name'] = self.fname
                 if i == 'last_name':
