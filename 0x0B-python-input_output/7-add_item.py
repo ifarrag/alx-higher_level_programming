@@ -14,8 +14,10 @@ if sys.argv > 1:
 else:
     listed = list()
 
-my_dir = load("add_item.json")
+save1 = save()
+load1 = load()
+my_dir = load1("add_item.json")
 
 my_dir += listed
 
-save(my_dir, "add_item.json")
+save1(my_dir, "add_item.json")
