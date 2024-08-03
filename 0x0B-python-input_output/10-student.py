@@ -14,14 +14,14 @@ class Student:
         """ Method Doc"""
 
         if type(attrs) is list and attrs is not None:
-            new_dict = dict()
             for i in attrs:
+                new_dict = dict()
                 if i == 'first_name':
-                    new_dict('first_name') = self.fname
+                    new_dict['first_name'] = self.fname
                 if i == 'last_name':
-                    new_dict('last_name') = self.lname
+                    new_dict['last_name'] = self.lname
                 if i == 'age':
-                    new_dict('age') = self.age
+                    new_dict['age'] = self.age
             return new_dict
 
         else:
