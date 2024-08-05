@@ -8,3 +8,5 @@ class Test_all(unittest.TestCase):
     def test_0(self):
         """ Function Doc"""
         self.assertTrue(True)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
