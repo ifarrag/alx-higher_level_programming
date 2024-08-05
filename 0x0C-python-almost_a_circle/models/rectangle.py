@@ -2,6 +2,8 @@
 """ Module Doc"""
 
 
+from models.base import Base
+
 class Rectangle(Base):
     """ Class Doc"""
 
