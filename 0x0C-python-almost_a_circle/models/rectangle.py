@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """ Module Doc"""
-
-
 from models.base import Base
+
 
 class Rectangle(Base):
     """ Class Doc"""
@@ -12,7 +11,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-        super().__init__()
+        Base.__init__(self, id)
 
     @property
     def width(self):
