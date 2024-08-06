@@ -11,12 +11,12 @@ class Rectangle(Base):
         def __errinit(self, name, value, switch):
         """ Error handel"""
 
-        if type(value) is not int:
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0 and switch == "hw":
-            raise ValueError("{} must be > 0".format(name))
-        if value < 0 and switch == "xy":
-            raise ValueError("{} must be >= 0".format(name))
+            if type(value) is not int:
+                raise TypeError("{} must be an integer".format(name))
+            if value <= 0 and switch == "hw":
+                raise ValueError("{} must be > 0".format(name))
+            if value < 0 and switch == "xy":
+                raise ValueError("{} must be >= 0".format(name))
 
         self.__errinit("width", width, "hw")
         self.__width = width
