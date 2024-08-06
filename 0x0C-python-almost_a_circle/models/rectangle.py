@@ -8,8 +8,9 @@ class Rectangle(Base):
     """ Class Doc"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        atrrs = [width, height, x, y]
         def __errinit(self, name, value, switch):
-        """ Error handel"""
+            """ Error handel"""
 
             if type(value) is not int:
                 raise TypeError("{} must be an integer".format(name))
