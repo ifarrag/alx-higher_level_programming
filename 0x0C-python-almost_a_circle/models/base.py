@@ -18,5 +18,5 @@ class Base:
     def to_json_string(list_dictionaries):
         """ Load string to json"""
         if list_dictionaries is None or len(list_dictionaries) == 0:
-            return json.loads(list())
-        return json.loads(list(list_dictionaries))
+            return json.dumps(list())
+        return json.dumps(list_dictionaries)
