@@ -17,7 +17,8 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """ Load string to json"""
-        if len(list_dictionaries) == 0:
+        if list_dictionaries is None or len(list_dictionaries) == 0:
             return json.dumps(list())
-        dmp = json.dumps(list_dictionaries)
+
+        dmp = json.dumps(list_dictionariesi, separators=(',', ':'))
         return dmp
