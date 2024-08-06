@@ -6,8 +6,9 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """ Class Doc"""
     def __init__(self, size, x=0, y=0, id=None):
-        self.__size = size
-        Rectangle().__init__(self, x, y, id)
+        width = size
+        height = size
+        Rectangle().__init__(self, width, height, x, y, id)
 
     def __str__(self):
         return "[Square] (" + str(self.id) + ") "\
