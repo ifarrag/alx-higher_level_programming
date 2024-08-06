@@ -94,7 +94,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """ Update in order id,width,height,x,y"""
-        if args is not None:
+        if len(args) != 0:
             for i in range(len(args)):
                 if i == 0:
                     self.id = args[0]
@@ -106,7 +106,7 @@ class Rectangle(Base):
                     self.__x = args[3]
                 elif i == 4:
                     self.__y = args[4]
-        elif kwargs is not None:
+        elif len(kwargs) != 0:
             for i in kwargs:
                 if i == "width":
                     self.__width = kwargs[i]
