@@ -92,19 +92,30 @@ class Rectangle(Base):
                     print("#", end="")
                 print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ Update in order id,width,height,x,y"""
-        for i in range(len(args)):
-            if i == 0:
-                self.id = args[0]
-            elif i == 1:
-                self.__width = args[1]
-            elif i == 2:
-                self.__height = args[2]
-            elif i == 3:
-                self.__x = args[3]
-            elif i == 4:
-                self.__y = args[4]
+        if args is not None:
+            for i in range(len(args)):
+                if i == 0:
+                    self.id = args[0]
+                elif i == 1:
+                    self.__width = args[1]
+                elif i == 2:
+                    self.__height = args[2]
+                elif i == 3:
+                    self.__x = args[3]
+                elif i == 4:
+                    self.__y = args[4]
+        elif kwargs is not None:
+            for i in kwargs:
+                if i == "width":
+                    self.__width = kwargs[i]
+                if i == "height":
+                    self.__height = kwargs[i]
+                if i == "x":
+                    self.__x = kwargs[i]
+                if i == "y":
+                    self.__y = kwargs[i]
 
     def __str__(self):
         return "[Rectangle] (" + str(self.id) + ") "\
