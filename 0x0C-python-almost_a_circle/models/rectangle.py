@@ -8,8 +8,8 @@ class Rectangle(Base):
     """ Class Doc"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        hw = {"width": width, "height":height}
-        xy = {"x":x, "y":y}
+        hw = {"width": width, "height": height}
+        xy = {"x": x, "y": y}
         for key, value in hw.items():
             if type(value) is not int:
                 raise TypeError("{} must be an integer".format(key))
