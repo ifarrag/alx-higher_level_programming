@@ -20,5 +20,5 @@ class Base:
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return json.dumps(list())
 
-        dmp = json.dumps(list(list_dictionaries))
+        dmp = json.dumps((list_dictionaries))
         return dmp
