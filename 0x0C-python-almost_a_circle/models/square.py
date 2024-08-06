@@ -9,6 +9,7 @@ class Square(Rectangle):
         Rectangle().__init__(self, size, size, x, y, id)
 
     def area(self):
+        """ get the area 2*size"""
         Rectangle.area()
 
     def __str__(self):
