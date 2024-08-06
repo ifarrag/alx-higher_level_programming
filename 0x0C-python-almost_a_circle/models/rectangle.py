@@ -80,8 +80,8 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ Return dictionary of attribute"""
-        return dict({"id": self.id, "width": self.__width, "height": self.height\
-                    , "x": self.x, "y": self.y})
+        return dict({"id": self.id, "width": self.__width, 
+                    "height": self.height, "x": self.x, "y": self.y})
 
     def display(self):
         """ Show area with #"""
