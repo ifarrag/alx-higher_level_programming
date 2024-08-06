@@ -92,6 +92,20 @@ class Rectangle(Base):
                     print("#", end="")
                 print()
 
+    def update(self, *args):
+        """ Update in order id,width,height,x,y"""
+        for i in range(len(args)):
+            if i == 0:
+                self.id = args[0]
+            elif i == 1:
+                self.__width = args[1]
+            elif i == 2:
+                self.__height = args[2]
+            elif i == 3:
+                self.__x = args[3]
+            elif i == 4:
+                self.__y = args[4]
+
     def __str__(self):
         return "[Rectangle] (" + str(self.id) + ") "\
                 + str(self.__x) + "/" + str(self.__y) + " - "\
