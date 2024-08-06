@@ -8,24 +8,22 @@ class Rectangle(Base):
     """ Class Doc"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        atrrs = [width, height, x, y]
-        def __errinit(self, name, value, switch):
-            """ Error handel"""
-
+        hw = {"width": width, "height":height}
+        xy = {"x":x, "y":y}
+        for key, value in hw.items():
             if type(value) is not int:
-                raise TypeError("{} must be an integer".format(name))
-            if value <= 0 and switch == "hw":
-                raise ValueError("{} must be > 0".format(name))
-            if value < 0 and switch == "xy":
-                raise ValueError("{} must be >= 0".format(name))
+                raise TypeError("{} must be an integer".format(key))
+            if value <= 0:
+                raise ValueError("{} must be > 0".format(key))
+        for key, value in xy.items():
+            if type(value) is not int:
+                raise TypeError("{} must be an integer".format(key))
+            if value < 0:
+                raise ValueError("{} must be >= 0".format(key))
 
-        self.__errinit("width", width, "hw")
         self.__width = width
-        self.__errinit("height", height, "hw")
         self.__height = height
-        self.__errinit("x", x, "xy")
         self.__x = x
-        self.__errinit("width", y, "xy")
         self.__y = y
         Base.__init__(self, id)
 
