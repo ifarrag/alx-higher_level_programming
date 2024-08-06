@@ -19,4 +19,5 @@ class Base:
         """ Load string to json"""
         if len(list_dictionaries) == 0:
             return json.dumps(list())
-        return json.dumps(list_dictionaries)
+        dmp = json.dumps(list_dictionaries)
+        return dmp
