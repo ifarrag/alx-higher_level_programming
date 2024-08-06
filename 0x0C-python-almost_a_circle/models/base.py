@@ -4,6 +4,7 @@
 
 class Base:
     """ Class Doc"""
+    import json
 
     __nb_objects = 0
 
@@ -12,3 +13,9 @@ class Base:
         if self.id is None:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return list()
+
+        return json.load(list_dictionaries)
