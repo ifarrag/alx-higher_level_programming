@@ -116,6 +116,8 @@ class Rectangle(Base):
                     self.__x = kwargs[i]
                 if i == "y":
                     self.__y = kwargs[i]
+                if i == "id":
+                    self.id = kwargs[i]
 
     def __str__(self):
         return "[Rectangle] (" + str(self.id) + ") "\
