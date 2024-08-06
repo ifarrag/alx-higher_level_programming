@@ -8,9 +8,23 @@ class Rectangle(Base):
     """ Class Doc"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        def __errinit(self, name, value, switch):
+        """ Error handel"""
+
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0 and switch == "hw":
+            raise ValueError("{} must be > 0".format(name))
+        if value < 0 and switch == "xy":
+            raise ValueError("{} must be >= 0".format(name))
+
+        self.__errinit("width", width, "hw")
         self.__width = width
+        self.__errinit("height", height, "hw")
         self.__height = height
+        self.__errinit("x", x, "xy")
         self.__x = x
+        self.__errinit("width", y, "xy")
         self.__y = y
         Base.__init__(self, id)
 
