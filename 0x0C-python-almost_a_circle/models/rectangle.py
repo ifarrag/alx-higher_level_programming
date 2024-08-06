@@ -14,7 +14,7 @@ class Rectangle(Base):
         self.__y = y
         Base.__init__(self, id)
 
-    def __err(name, value):
+    def __err(self, name, value):
         """ Error handel"""
 
         if type(value) is not int:
