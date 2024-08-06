@@ -14,15 +14,15 @@ class Rectangle(Base):
         self.__y = y
         Base.__init__(self, id)
 
-    def __err(self, name, value):
+    def __err(self, name, value, switch):
         """ Error handel"""
 
         if type(value) is not int:
-            raise TypeError(f"{name} must be an integer")
-        if value <= 0 and value is not x and value is not y:
-            raise ValueError(f"{name} must be > 0")
-        if value is y or value is x and value < 0:
-            raise ValueError(f"{name} must be >= 0")
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0 and switch == "hw":
+            raise ValueError("{} must be > 0".format(name))
+        if value < 0 and switch == "xy":
+            raise ValueError("{} must be >= 0".format(name))
 
     @property
     def width(self):
@@ -30,7 +30,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        self.__err("width", value)
+        self.__err("width", value, "hw")
         self.__width = value
 
     @property
@@ -39,7 +39,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        self.__err("height", value)
+        self.__err("height", value, "hw")
         self.__height = value
 
     @property
@@ -48,7 +48,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        self.__err("x", value)
+        self.__err("x", value, "xy")
         self.__x = value
 
     @property
@@ -57,7 +57,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        self.__err("y", value)
+        self.__err("y", value, "xy")
         self.__y = value
 
     def area(self):
