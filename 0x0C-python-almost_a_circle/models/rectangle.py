@@ -80,9 +80,15 @@ class Rectangle(Base):
 
     def display(self):
         """ Show area with #"""
+        if self.__y != 0:
+            for d in range(self.__y):
+                print()
         if self.__height != 0 and self.__width != 0:
             for a in range(self.__height):
                 for b in range(self.__width):
+                    if self.__x != 0:
+                        for c in range(self.__x):
+                            print(" ", end="")
                     print("#", end="")
                 print()
 
