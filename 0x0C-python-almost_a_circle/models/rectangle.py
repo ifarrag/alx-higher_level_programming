@@ -15,6 +15,8 @@ class Rectangle(Base):
         Base.__init__(self, id)
 
     def __err(name, value):
+        """ Error handel"""
+
         if type(value) is not int:
             raise TypeError(f"{name} must be an integer")
         if value <= 0 and value is not x and value is not y:
