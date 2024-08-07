@@ -41,5 +41,6 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         r = cls.__name__
+        r(dictionary["width"])
         r.update(**dictionary)
         return r
