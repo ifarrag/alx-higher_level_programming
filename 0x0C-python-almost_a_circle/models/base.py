@@ -19,5 +19,5 @@ class Base:
         """ Load string to json"""
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
-        dump = json.JSONEncoder().encode(list_dictionaries)
+        dmp = json.JSONEncoder().encode(list_dictionaries)
         return dmp
