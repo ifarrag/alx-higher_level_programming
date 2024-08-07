@@ -40,6 +40,6 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        n = cls.__name__(1,1,1,1,1)
+        n = cls.__name__
         r = n.update(dictionary)
         return r
