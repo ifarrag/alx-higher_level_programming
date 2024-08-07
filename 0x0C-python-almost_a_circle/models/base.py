@@ -41,5 +41,5 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         n = cls.__name__()
-        r = n.update(dictionary)
+        r = n.update(**dictionary)
         return r
