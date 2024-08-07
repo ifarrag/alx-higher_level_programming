@@ -45,5 +45,5 @@ class Base:
         cls.x = 1
         cls.y = 1
         cls.id = 1
-        r = cls.update(**dictionary)
+        r = cls.update(dictionary)
         return r
