@@ -4,7 +4,6 @@
 
 class Base:
     """ Class Doc"""
-    import json
 
     __nb_objects = 0
 
@@ -17,6 +16,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """ Load string to json"""
+        import json
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         dmp = json.dumps(list_dictionaries)
