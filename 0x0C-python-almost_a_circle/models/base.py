@@ -37,3 +37,8 @@ class Base:
         if json_string is None or len(json_string) == 0:
             return list()
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        r = cls.update(**dictionary)
+        return r
