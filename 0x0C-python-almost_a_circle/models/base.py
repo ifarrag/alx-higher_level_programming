@@ -21,4 +21,4 @@ class Base:
             return "[]"
 
         dmp = json.dumps((list_dictionaries))
-        return dmp
+        return str([dmp])
