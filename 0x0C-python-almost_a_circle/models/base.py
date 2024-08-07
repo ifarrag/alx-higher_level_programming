@@ -40,6 +40,5 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        r = cls()
-        r.update(**dictionary)
-        return r
+        cls()
+        return cls.update(**dictionary)
