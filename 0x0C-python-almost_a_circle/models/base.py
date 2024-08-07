@@ -25,6 +25,6 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         Name = cls.__name__ + ".json"
-        wrto = cls.to_json_string(list_objs)
+        wrto = to_json_string(list_objs)
         with open(Name, 'w', encoding="utf-8") as f:
             f.write(wrto)
