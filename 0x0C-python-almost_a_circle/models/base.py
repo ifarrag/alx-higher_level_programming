@@ -19,6 +19,8 @@ class Base:
         """ Load string to json"""
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
-
-        dmp = json.dumps((list_dictionaries))
-        return str([dmp])
+        if type(list_dictionaries) is list:
+            dmp = json.dumps(list_dictionaries)
+        else:
+            dump = json.dumps([list_dictionaries])
+        return dmp
