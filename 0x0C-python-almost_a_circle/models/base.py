@@ -30,6 +30,7 @@ class Base:
         wrto = cls.to_json_string(list_objs)
         with open(Name, 'w', encoding="utf-8") as f:
             f.write(wrto)
+
     @staticmethod
     def from_json_string(json_string):
         import json
