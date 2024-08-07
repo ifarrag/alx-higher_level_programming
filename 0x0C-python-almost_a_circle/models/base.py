@@ -40,10 +40,6 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        cls.id = id
-        cls.width = width
-        cls.height = height
-        cls.x = x
-        cls.y = y
+        cls.__name__(1, 1)
         r = cls.update(**dictionary)
         return r
