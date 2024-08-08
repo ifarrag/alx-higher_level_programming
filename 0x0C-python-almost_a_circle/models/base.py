@@ -51,14 +51,20 @@ class Base:
     @classmethod
     def load_from_file(cls):
         if cls.__name__ == "Rectangle":
-            with open("Rectangle.json", encoding='utf-8') as f:
-                r_json = f.read()
-                l_attr = cls.from_json_string(r_json)
-            l_inst = [cls.create(**i) for i in l_attr]
-            return l_inst
+            try:
+                with open("Rectangle.json", encoding='utf-8') as f:
+                    r_json = f.read()
+                    l_attr = cls.from_json_string(r_json)
+                l_inst = [cls.create(**i) for i in l_attr]
+                return l_inst
+            except:
+                return list()
         else:
-            with open("Square.json", encoding='utf-8') as f:
-                r_json = f.read()
-                l_attr = cls.from_json_string(r_json)
-            l_inst = [cls.create(**i) for i in l_attr]
-            return l_inst
+            try:
+                with open("Square.json", encoding='utf-8') as f:
+                    r_json = f.read()
+                    l_attr = cls.from_json_string(r_json)
+                l_inst = [cls.create(**i) for i in l_attr]
+                return l_inst
+            except:
+                return list()
