@@ -8,6 +8,7 @@ class Base:
     __nb_objects = 0
 
     import json
+    
     def __init__(self, id=None):
         self.id = id
         if self.id is None:
