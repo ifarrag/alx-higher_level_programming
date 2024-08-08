@@ -7,6 +7,7 @@ class Base:
 
     __nb_objects = 0
 
+    import ison
     def __init__(self, id=None):
         self.id = id
         if self.id is None:
@@ -46,3 +47,18 @@ class Base:
             r = cls(1, 0, 0, 1)
         r.update(**dictionary)
         return r
+
+    @classmethod
+    def load_from_file(cls):
+        if cls.__name__ == "Rectangle":
+            with open("Rectangle.json", encoding='utf-8') as f:
+                r_json = f.read()
+                l_attr = cls.from_json_string(r_json)
+            l_inst = [cls.create(i) for i in l_attr]
+            return l_inst
+        else:
+            with open("Square.json", encoding='utf-8') as f:
+                r_json = f.read()
+                l_attr = cls.from_json_string(r_json)
+            l_inst = [cls.create(i) for i in l_attr]
+            return l_inst
