@@ -8,7 +8,7 @@ class Base:
     __nb_objects = 0
 
     import json
-    
+
     def __init__(self, id=None):
         self.id = id
         if self.id is None:
@@ -58,7 +58,7 @@ class Base:
                     l_attr = cls.from_json_string(r_json)
                 l_inst = [cls.create(**i) for i in l_attr]
                 return l_inst
-            except:
+            except Exception:
                 return list()
         else:
             try:
@@ -67,5 +67,5 @@ class Base:
                     l_attr = cls.from_json_string(r_json)
                 l_inst = [cls.create(**i) for i in l_attr]
                 return l_inst
-            except:
+            except Exception:
                 return list()
