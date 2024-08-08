@@ -54,11 +54,11 @@ class Base:
             with open("Rectangle.json", encoding='utf-8') as f:
                 r_json = f.read()
                 l_attr = cls.from_json_string(r_json)
-            l_inst = [cls.create(i) for i in l_attr]
+            l_inst = [cls.create(**i) for i in l_attr]
             return l_inst
         else:
             with open("Square.json", encoding='utf-8') as f:
                 r_json = f.read()
                 l_attr = cls.from_json_string(r_json)
-            l_inst = [cls.create(i) for i in l_attr]
+            l_inst = [cls.create(**i) for i in l_attr]
             return l_inst
